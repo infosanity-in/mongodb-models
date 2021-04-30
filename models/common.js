@@ -2,7 +2,7 @@ const mongoose = require('mongoose'),
   Schema = mongoose.Schema,
   { ObjectId } = mongoose.Schema.Types;
 
-const aclSchema = new Schema({
+const AclSchema = new Schema({
   createdBy: {
     id: {
       type: ObjectId,
@@ -24,5 +24,5 @@ const aclSchema = new Schema({
 })
 
 module.exports = {
-  aclSchema
+  AclSchema
 };

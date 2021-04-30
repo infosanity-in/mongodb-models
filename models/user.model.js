@@ -32,7 +32,8 @@ const UserSchema = new Schema({
   },
   roleId: {
     type: ObjectId,
-    ref: 'role',
+    ref: 'Role',
+    default: null,
   },
   token: {
     type: String,
@@ -41,4 +42,4 @@ const UserSchema = new Schema({
   timestamps: true
 });
 
-module.exports = mongoose.model('user', UserSchema, 'users');
+module.exports = mongoose.model('User', UserSchema, 'users');
